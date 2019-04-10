@@ -8,7 +8,15 @@ module.exports = merge(baseConfig, {
     host: '0.0.0.0',
     // default to port 8080 then ++ if non avail
     port: 4000,
-    useLocalIp: true // requires `host:` key
+    disableHostCheck: true,
+    useLocalIp: true, // requires `host:` key
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:3000'
+      // 'Access-Control-Allow-Origin': '*'
+    },
+    proxy: {
+      '/api': 'http://localhost:3000'
+    }
   },
   devtool: 'source-map',
 });

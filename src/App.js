@@ -5,21 +5,23 @@ import { hot } from 'react-hot-loader';
 // API shit
 import axios from 'axios';
 
-
+let headers = {
+  // withCredentials:true,
+  withCredentials:false
+};
 
 class App extends React.Component {
-
-
+  
   componentDidMount() {
-    axios.get('http://localhost:3000/api/hello')
-      .then(response => {
+    axios.get('http://localhost:3000/api/hello', headers)
+      .then(function (response) {
         console.log(response);
-        this.setState({ideas: response.data});
       })
-      .catch(error => console.log(error));
+      .catch(function (error) {
+        console.log(error);
+      });
   }
 
-  // cons.log
   render() {
     // print `logging` in a browser console
     // console.log('logging');
