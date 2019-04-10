@@ -6,8 +6,44 @@
 
 ## Contents
 
+- [Working with CORS](#working-with-cors)
 - [Updates](#updates)
 - [TODOs](#todos)
+
+<a id="working-with-cors"></a>
+
+## Working with CORS
+
+<strong>webpack-dev-server</strong> can be configured to work with CORS, ie. a react based app can send an AJAX request using vanilla JS, or even using a promise based library such **axios** to make an AJAX request. I setup a very primitive AJAX request to experiment with CORS in dev.  Working with CORS is still a total PITA but can be used to get things work.  See changes made to the **webpack.config.dev.js** for settings related to CORS and webpack configuration.  An honorable mention, make certain to disable credentials when making a AJAX request with **axios** in local development.
+
+If an API is setup properly to handle CORS requests, ie. the rails API I've setup and the **webpack dev server** properly then the last piece of the jig saw puzzle is make sure the web browser is setup properly.
+
+#### Working with CORS > web browser
+
+The **webpack-dev-server** configured in this app should work out of the box with Firefox on macOS without any browser extensions.  However using a browser such Vivaldi requires a [browser extension](https://github.com/vitvad/Access-Control-Allow-Origin) to work with the CORS requests and responses.
+
+##### Working with CORS > web browsers > Firefox
+
+Firefox should not have a problem accessing,
+
+```conf
+http://localhost:4000
+```
+
+##### Working with CORS > web browser > Chromium based browsers
+
+When accessing the client side app, avoid using the
+
+```conf
+http://localhost:4000
+```
+
+instead use when accessing client in dev.
+
+```conf
+http://[LOCAL.IP.ADDRESS]:[PORT]
+http://10.0.1.8:4000
+```
 
 <a id="updates"></a>
 
