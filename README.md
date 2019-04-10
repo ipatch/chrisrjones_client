@@ -13,6 +13,8 @@
 
 ## Updates
 
+- add **axios** pkg to make AJAX calls to rails API
+
 - added [**webapp-webpack-plugin**](https://www.npmjs.com/package/webapp-webpack-plugin) to generate favicons for various systems and platforms. Copied the svg that is part of **create-react-app** to be the favicon for this project.
 
 - added **prettier** to project via NPM to make all **.js** files conform to a single Javascript code formatting standard.

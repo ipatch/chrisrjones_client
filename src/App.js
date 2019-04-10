@@ -2,8 +2,23 @@ import React from 'react';
 import Hello from './components/hello';
 import './styles.css';
 import { hot } from 'react-hot-loader';
+// API shit
+import axios from 'axios';
+
+
 
 class App extends React.Component {
+
+
+  componentDidMount() {
+    axios.get('http://localhost:3000/api/hello')
+      .then(response => {
+        console.log(response);
+        this.setState({ideas: response.data});
+      })
+      .catch(error => console.log(error));
+  }
+
   // cons.log
   render() {
     // print `logging` in a browser console
