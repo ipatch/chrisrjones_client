@@ -49,3 +49,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* MenuIcon > CSS Selector */
+.my-menu-icon {
+  width: 35px;
+  height: 5px;
+  background-color: green;
+  margin: 6px 0;
+}
