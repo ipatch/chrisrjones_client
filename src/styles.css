@@ -111,3 +111,24 @@ img {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
+
+
+/* EXP with BEM */
+#bun {
+  width: 35px;
+  height: 5px;
+  background-color: brown;
+  margin: 6px 0;
+  /* put transform in the CSS property */
+  /* put transition in this property */
+  transform: rotate(0deg);
+  transition: transform 400ms ease-in;
+}
+
+#bun.show {
+  transform: rotate(-45deg);
+}
+
+#bun.animate {
+  transform: rotate(0deg);
+}
