@@ -28,9 +28,9 @@ class MenuHam extends React.Component {
 
   render() {
     return(
-      <div className="ani-bun">
+      <div>
         <button type="button" onClick={this.handleClick}>
-          {this.state.visible ? 'animate hamburger' : 'restore hamburger'}
+          {this.state.visible ? '' : ''}
         </button>
         {/* <hr /> */}
         <AniBun visible={this.state.visible} />

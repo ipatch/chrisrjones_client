@@ -119,8 +119,8 @@ img {
   height: 5px;
   background-color: brown;
   margin: 6px 0;
-  /* put transform in the CSS property */
-  /* put transition in this property */
+  /* put transform in this selector */
+  /* put transition in this selector */
   transform: rotate(0deg);
   transition: transform 400ms ease-in;
 }
