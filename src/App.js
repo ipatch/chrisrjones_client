@@ -1,6 +1,10 @@
 import React from 'react';
 import Hello from './components/hello';
+//
+import NavBar from './components/NavBar';
 import MenuIcon from './components/MenuIcon';
+import MenuIconAnimated from './components/MenuIconAnimated';
+//
 import './styles.css';
 import { hot } from 'react-hot-loader';
 // API shit
@@ -28,7 +32,9 @@ class App extends React.Component {
     // console.log('logging');
     return (
       <div>
+        <NavBar />
         <MenuIcon />
+        <MenuIconAnimated />
         <h1>Hello from App, using React and webpack!</h1>
         <br />
         <Hello />
