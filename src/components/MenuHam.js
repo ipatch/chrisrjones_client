@@ -28,11 +28,8 @@ class MenuHam extends React.Component {
 
   render() {
     return(
-      <div>
-        <button type="button" onClick={this.handleClick}>
-          {this.state.visible ? '' : ''}
-        </button>
-        {/* <hr /> */}
+      <div onClick={this.handleClick}>
+        {this.state.visible ? '' : ''}
         <AniBun visible={this.state.visible} />
       </div>
     );
