@@ -28,7 +28,7 @@ class BurgerMenu extends React.Component {
 
   render() {
     return(
-      <div onClick={this.handleClick}>
+      <div id="hamburger-container" onClick={this.handleClick}>
         {this.state.visible ? '' : ''}
         <Buns visible={this.state.visible} />
       </div>
