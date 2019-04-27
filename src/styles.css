@@ -113,9 +113,18 @@ img {
 }
 
 #hamburger-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  /* position: fixed; */
+  /* top: 50%; */
+  /* left: 50%; */
+  display: flex; /* setup flex container */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* TODO: exp with div sizing */
+  height: 300px;
+  /* DEBUG */
+  outline-style: dashed;
+  outline-color: blue;
 }
 
 /* buns */
@@ -139,9 +148,39 @@ img {
   /* position: absolute; */
 }
 
-#bun.show-top {
+
+/* TOOD: make `#bun-top` inheret all props from `#bun` */
+#bun-top {
+  /* width: 35px; */
+  /* height: 5px; */
+  /* margin: 6px 0; */
+  /* background-color: #333; */
+  background-color: brown;
+  transform: rotate(0deg);
+  transition: transform 400ms ease-in;
+  cursor: pointer;
+  /* exp */
+  text-align:center;
+  width: 30vh;
+  height: 5vh;
+  margin-top: 4vh;
+  /* display:inline-block; */
+  border-radius: 2.5vh;
+  /* position:relative; */
+  /* position: absolute; */
+}
+
+#bun-top:hover {
+  background-color: green;
+}
+
+#bun-top.show-top {
   transform: rotate(-45deg);
 }
+
+/* #bun.show-top:hover { */
+/*   background-color: green; */
+/* } */
 
 #bun.show-bottom {
   transform: rotate(45deg);

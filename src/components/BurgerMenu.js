@@ -6,7 +6,7 @@ import '../styles.css';
 
 const Buns = ({visible}) => (
   <div>
-    <div id="bun" className={visible ? 'show-top'  :'animate'}></div>
+    <div id="bun-top" className={visible ? 'show-top'  :'animate'}></div>
     <div id="bun" className={visible ? 'show-bottom'  :'animate'}></div>
   </div>
 );
