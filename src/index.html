@@ -4,7 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>React Boilerplate</title>
+    <% if (process.env.NODE_ENV == 'development') { %>
+    <title>DEV > crj_client</title>
+    <% } else if (process.env.NODE_ENV == 'production') { %>
+    <title>chrisrjones.com</title>
+    <% } %>
+
   </head>
   <body>
     <div id="app"></div>

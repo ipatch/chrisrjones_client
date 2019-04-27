@@ -5,7 +5,7 @@ import { hot } from 'react-hot-loader';
 import axios from 'axios';
 
 // components
-import MenuHam from './components/MenuHam';
+import BurgerMenu from './components/BurgerMenu';
 
 let headers = {
   // withCredentials:true,
@@ -27,7 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="App">
-        <MenuHam />
+        <BurgerMenu />
       </div>
     );
   }

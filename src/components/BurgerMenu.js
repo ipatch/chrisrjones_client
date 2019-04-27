@@ -4,18 +4,18 @@ import PropTypes from 'prop-types';
 // styles
 import '../styles.css';
 
-const AniBun = ({visible}) => (
-  // <div id="ani-bun">
-  <div id="bun" className={visible ? 'show' : 'animate'}>
+const Buns = ({visible}) => (
+  <div>
+    <div id="bun" className={visible ? 'show-top'  :'animate'}></div>
+    <div id="bun" className={visible ? 'show-bottom'  :'animate'}></div>
   </div>
-  // </div>
 );
 
-AniBun.propTypes = {
+Buns.propTypes = {
   visible: PropTypes.bool
 };
 
-class MenuHam extends React.Component {
+class BurgerMenu extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -30,10 +30,10 @@ class MenuHam extends React.Component {
     return(
       <div onClick={this.handleClick}>
         {this.state.visible ? '' : ''}
-        <AniBun visible={this.state.visible} />
+        <Buns visible={this.state.visible} />
       </div>
     );
   }
 }
 
-export default MenuHam;
+export default BurgerMenu;

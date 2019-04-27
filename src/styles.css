@@ -112,22 +112,25 @@ img {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-
-/* EXP with BEM */
+/* buns */
 #bun {
   width: 35px;
   height: 5px;
+  /* background-color: #333; */
   background-color: brown;
   margin: 6px 0;
-  /* put transform in this selector */
-  /* put transition in this selector */
   transform: rotate(0deg);
   transition: transform 400ms ease-in;
   cursor: pointer;
 }
 
-#bun.show {
+
+#bun.show-top {
   transform: rotate(-45deg);
+}
+
+#bun.show-bottom {
+  transform: rotate(45deg);
 }
 
 #bun.animate {
