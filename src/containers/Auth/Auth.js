@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Input from '../components/Input';
+import Button from '../components/Button';
 
 class Auth extends Component {
   // manage form state using react
@@ -43,11 +45,24 @@ class Auth extends Component {
       });
     }
 
+    const form = formElementsArray.map(formElement => (
+      <Input
+        key={formElement.id}
+        elementType={formElement.config.elementType}
+        elementConfig={formElement.config.elementConfig}
+        value={formElement.config.value}
+        invalid={!formElement.config.valid}
+        shouldValidate={formElement.config.validation}
+        touched={formElement.config.touched}
+        changed={(event) => this.inputChangedHandler(event, formElement.id)} />
+
+    ));
+
     return (
       <div>
         <form>
           {form}
-          <Button />
+          <Button btnType="Success">Login</Button>
         </form>
       </div>
     );

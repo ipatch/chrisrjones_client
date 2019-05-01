@@ -6,6 +6,8 @@ import axios from 'axios';
 
 // components
 import BurgerMenu from './components/BurgerMenu';
+import Button from './components/Button';
+import Input from './components/Input';
 
 let headers = {
   // withCredentials:true,
@@ -28,6 +30,8 @@ class App extends React.Component {
     return (
       <div id="App">
         <BurgerMenu />
+        <Button />
+        <Input />
       </div>
     );
   }
