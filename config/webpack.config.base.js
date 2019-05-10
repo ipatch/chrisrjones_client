@@ -20,7 +20,18 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ExtractCssChunks.loader, 'css-loader', 'postcss-loader'],
+        use: [
+          ExtractCssChunks.loader, 'css-loader', 
+          {
+            loader:  'postcss-loader',
+            query: {
+              config:
+              { 
+                path: './config/postcss.config'
+              }
+            }
+          }
+        ],
       },
       {
         test: /\.(jpe?g|gif|png|svg|bmp)$/,
