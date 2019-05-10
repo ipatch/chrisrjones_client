@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Input from '../components/Input';
-import Button from '../components/Button';
+
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import classes from './Auth.css';
 
 class Auth extends Component {
   // manage form state using react
@@ -38,10 +40,10 @@ class Auth extends Component {
 
   render() {
     const formElementsArray = [];
-    for(let key in this.state.loginForm) {
+    for( let key in this.state.controls) {
       formElementsArray.push({
         id: key,
-        config: this.state.loginForm[key]
+        config: this.state.controls[key]
       });
     }
 
@@ -59,10 +61,10 @@ class Auth extends Component {
     ));
 
     return (
-      <div>
+      <div className={classes.Auth}>
         <form>
           {form}
-          <Button btnType="Success">Login</Button>
+          <Button btnType="Success">Submit Login</Button>
         </form>
       </div>
     );

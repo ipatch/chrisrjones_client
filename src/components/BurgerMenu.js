@@ -1,6 +1,7 @@
 // libs
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 // styles
 import '../styles.css';
 
@@ -28,9 +29,12 @@ class BurgerMenu extends React.Component {
 
   render() {
     return(
-      <div id="hamburger-container" onClick={this.handleClick}>
-        {this.state.visible ? '' : ''}
-        <Buns visible={this.state.visible} />
+      <div>
+        <div id="hamburger-container" onClick={this.handleClick}>
+          {this.state.visible ? '' : ''}
+          <Buns visible={this.state.visible} />
+        </div>
+        <Link to="/login">Login</Link>
       </div>
     );
   }

@@ -29,7 +29,7 @@ const input = (props) => {
   }
 
   return (
-    <div clasName={classes.Input}>
+    <div className={classes.Input}>
       <label className={classes.Label}>{props.label}</label>
     </div>
   );

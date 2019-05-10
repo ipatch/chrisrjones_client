@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import '@babel/polyfill';
 import App from './App';
 // import DefaultErrorBoundary from './DefaultErrorBoundary'
@@ -9,7 +10,10 @@ import App from './App';
 //   axe(React, ReactDOM, 1000);
 // }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
+const app = (
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
+
+ReactDOM.render(app, document.getElementById('app'));

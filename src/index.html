@@ -9,9 +9,11 @@
     <% } else if (process.env.NODE_ENV == 'production') { %>
     <title>chrisrjones.com</title>
     <% } %>
-
   </head>
   <body>
+    <noscript>
+      No JavaScript ...no soup for you!
+    </noscript>
     <div id="app"></div>
     <% if(process.env.NODE_ENV === 'production') { %>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
