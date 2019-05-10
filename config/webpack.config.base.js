@@ -27,7 +27,7 @@ module.exports = {
             query: {
               config:
               { 
-                path: './config/postcss.config'
+                path: './config/postcss.config.js'
               }
             }
           }
