@@ -1,6 +1,6 @@
 const merge = require('webpack-merge');
 
-// NOTE: setting up `webpack-bundle-analyzer`
+// NOTE: initialize `webpack-bundle-analyzer` NPM module
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const baseConfig = require('./webpack.config.base');

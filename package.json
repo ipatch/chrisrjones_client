@@ -18,7 +18,7 @@
     "eslint-fix": "eslint --fix \"src/**/*.js\""
   },
   "author": "@ipatch",
-  "private": "true",
+  "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "acorn": "^6.1.1",
+    "autoprefixer": "^9.5.1",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.5",
@@ -52,6 +53,7 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.8.0",
     "jest-dom": "^3.2.2",
+    "postcss-loader": "^3.0.0",
     "prettier": "^1.17.0",
     "prop-types": "^15.7.2",
     "react-axe": "^3.1.0",

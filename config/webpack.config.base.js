@@ -20,7 +20,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ExtractCssChunks.loader, 'css-loader'],
+        use: [ExtractCssChunks.loader, 'css-loader', 'postcss-loader'],
       },
       {
         test: /\.(jpe?g|gif|png|svg|bmp)$/,
