@@ -32,13 +32,13 @@ http://localhost:4000
 
 ##### Working with CORS > web browser > Chromium based browsers
 
-When accessing the client side app, avoid using the
+When accessing the client side app, avoid using the below web address / URL
 
 ```conf
 http://localhost:4000
 ```
 
-instead use when accessing client in dev.
+...instead use the below URLs when accessing the client app in **dev**.
 
 ```conf
 http://[LOCAL.IP.ADDRESS]:[PORT]
@@ -48,6 +48,8 @@ http://10.0.1.8:4000
 <a id="updates"></a>
 
 ## Updates
+
+- **@babel/polyfill** has been deprecated in favor of setting a **corejs** value within the **.babelrc**
 
 - add **axios** pkg to make AJAX calls to rails API
 
@@ -73,15 +75,16 @@ http://localhost:8080
 
 ### Hooks
 
-⚠️ As of Jan 21, 2019 **hooks** has not been fully integrated into stable version of react, thus react@next is required to use **hooks**
+**hooks** have been integrated into react as of version 16.8
+
 
 <details>
 <summary>Primary NPM modules used with boilerplate</summary>
 
-- react v16.7
-- react-dom v16.7
+- react v16.8
+- react-dom v16.8
 - eslint
-- webpack
+- webpack 4.x
   - css-loader
   - html-webpack-plugin
   - style-loader
@@ -89,7 +92,6 @@ http://localhost:8080
 - webpack-dev-server
 - husky
 - babel v7
-  - @babel/polyfill
 - jest
 - react-hot-loader
 
