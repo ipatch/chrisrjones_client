@@ -48,4 +48,11 @@ class App extends Component {
 }
 
 // preserve app state during hot reloading
-export default hot(module)(App);
+// export default hot(module)(App);
+
+// jul3 2019
+const ExportedApp = process.env.NODE_ENV === 'development'
+  ? hot(App) // error is thrown by `hot`
+  : App;
+
+export default App;
