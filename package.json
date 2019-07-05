@@ -1,7 +1,7 @@
 {
   "//hacky-json-comment": "a hacky way to put comments in json files",
   "name": "chrisrjones_client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Client based React app with friends to com with a rails API",
   "engines": {
     "node": ">= 8.x",
