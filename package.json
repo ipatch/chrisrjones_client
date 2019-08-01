@@ -58,7 +58,7 @@
     "prop-types": "^15.7.2",
     "react-axe": "^3.2.0",
     "react-hot-loader": "^4.12.10",
-    "react-testing-library": "^8.0.1",
+    "@testing-library/react": "^8.0.1",
     "webapp-webpack-plugin": "^2.7.1",
     "webpack": "^4.39.0",
     "webpack-bundle-analyzer": "^3.4.1",
