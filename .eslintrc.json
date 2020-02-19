@@ -44,6 +44,11 @@
     ],
     "semi": [
       "error"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+      }
     ]
   }
 }
