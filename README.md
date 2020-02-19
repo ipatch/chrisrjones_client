@@ -49,6 +49,12 @@ http://10.0.1.8:4000
 
 ## Updates
 
+### Updates > Feb 18, 2020
+
+- [x] Experimented with creating a class based component for fetching data from an API using react.
+- [ ] Created a Functional based component using react hooks to fetch data from an API, **no work**.
+  - [source, medium article](https://medium.com/better-programming/how-to-fetch-data-from-an-api-with-react-hooks-9e7202b8afcd)
+
 - **@babel/polyfill** has been deprecated in favor of setting a **corejs** value within the **.babelrc**
 
 - add **axios** pkg to make AJAX calls to rails API
