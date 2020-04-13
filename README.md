@@ -113,4 +113,7 @@ http://localhost:8080
       - [**article** please stop using local storage](https://www.rdegges.com/2018/please-stop-using-local-storage/)
 - [ ] **useful link** [**medium article** working with SVGs in React](https://medium.com/@rossbulat/working-with-svgs-in-react-d09d1602a219)
   - discusses using SVGs with a react project and animating SVGs using styled components
+- [ ] **todo** review, use, experiment, with [source-map-explorer](https://github.com/danvk/source-map-explorer)
 - [x] ~~add support for working with various image formats.~~
+- [ ] [medium article **22 performance optimization techniques for react** learn more](https://medium.com/better-programming/https-medium-com-mayank-gupta-6-88-21-performance-optimizations-techniques-for-react-d15fa52c2349)
+- [ ] [medium article, **making api calls with react hooks** learn more](https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c)
