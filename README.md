@@ -107,4 +107,8 @@ http://localhost:8080
 
 ## TODOs [🔝](#contents)
 
+- [ ] **useful link** using react with JWT tokens for session authentication to an API
+    - [medium article **Using JWT in Your React+Redux App for Authorization**](https://levelup.gitconnected.com/using-jwt-in-your-react-redux-app-for-authorization-d31be51a50d2)
+    - **NOTE** it is considered _bad practice_ to store a JWT in _browser, local storage_
+      - [**article** please stop using local storage](https://www.rdegges.com/2018/please-stop-using-local-storage/)
 - [x] ~~add support for working with various image formats.~~
