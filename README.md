@@ -111,4 +111,6 @@ http://localhost:8080
     - [medium article **Using JWT in Your React+Redux App for Authorization**](https://levelup.gitconnected.com/using-jwt-in-your-react-redux-app-for-authorization-d31be51a50d2)
     - **NOTE** it is considered _bad practice_ to store a JWT in _browser, local storage_
       - [**article** please stop using local storage](https://www.rdegges.com/2018/please-stop-using-local-storage/)
+- [ ] **useful link** [**medium article** working with SVGs in React](https://medium.com/@rossbulat/working-with-svgs-in-react-d09d1602a219)
+  - discusses using SVGs with a react project and animating SVGs using styled components
 - [x] ~~add support for working with various image formats.~~
