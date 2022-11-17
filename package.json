@@ -51,7 +51,7 @@
     "eslint-plugin-react": "^7.14.3",
     "extract-css-chunks-webpack-plugin": "^4.6.0",
     "file-loader": "^4.2.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "jest": "^24.9.0",
     "jest-dom": "^4.0.0",
     "postcss-loader": "^3.0.0",
@@ -62,7 +62,7 @@
     "webapp-webpack-plugin": "^2.7.1",
     "webpack": "^4.39.3",
     "webpack-bundle-analyzer": "^3.4.1",
-    "webpack-cli": "^3.3.7",
+    "webpack-cli": "^3.3.12",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
